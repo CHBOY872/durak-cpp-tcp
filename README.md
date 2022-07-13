@@ -39,6 +39,13 @@ You will have in Terminal like that:
 ```
 <  6 >   
          
+         
+         
+         
+         
+         
+         
+         
 Your cards:                                      < &9  > [ 40 ]
 [f: ^2 ]   [e: &Q ]   [d: #6 ]   [c: ^3 ]   [b: ?K ]   [a: &5 ]   
 throw>
@@ -55,7 +62,15 @@ After throwing card you will see like that:
 ```
 <  6 >   
 def      
+
+
+
+
 ^3  /    
+
+
+
+
 Your cards:                                      < &9  > [ 40 ]
 [f: ^2 ]   [e: &Q ]   [d: #6 ]   [b: ?K ]   [a: &5 ]   
 throw up>
