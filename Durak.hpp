@@ -56,18 +56,6 @@ public:
 
     item *operator->() { return first; }
 
-    void ShowDeck() const
-    {
-        item *tmp = first;
-        printf("\n\n\n\n\n\n\n");
-        while (tmp)
-        {
-            printf("%c%s %d\n", tmp->card->suit, tmp->card->card, tmp->idx);
-            tmp = tmp->next;
-        }
-        printf("\n\n\n\n\n\n\n");
-    }
-
     void Push(Card *card);
     void Pop();
     void RemoveCard(Card *card);

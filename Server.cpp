@@ -182,8 +182,8 @@ void Server::Handle(bool r, bool w)
         return;
     }
 
-    int flags = fcntl(socket_client, F_GETFL);
-    fcntl(socket_client, F_SETFL, flags | O_NONBLOCK);
+    // int flags = fcntl(socket_client, F_GETFL);
+    // fcntl(socket_client, F_SETFL, flags | O_NONBLOCK);
 
     item *p = new item;
     p->next = first;

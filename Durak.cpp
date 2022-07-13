@@ -31,7 +31,7 @@ void str_copy(char *dest, const char *from)
 #define CARDS_WITHOUT_SUIT_COUNT 13
 #define MAX_CARDS 52
 
-static char *cards_without_suits[CARDS_WITHOUT_SUIT_COUNT] =
+static char cards_without_suits[CARDS_WITHOUT_SUIT_COUNT][3] =
     {"2", "3", "4", "5", "6", "7",
      "8", "9", "10", "J", "Q", "K", "A"};
 static char suits[4] = {'^', '?', '#', '&'};
@@ -118,7 +118,7 @@ CardDeck *CardDeck::MakeDeck()
     srand(time(0));
     int i;
     int k = 0;
-    for (i = 0; i < 12; i++)
+    for (i = 0; i < CARDS_WITHOUT_SUIT_COUNT; i++)
     {
         int j;
         for (j = 0; j < 4; j++)
@@ -131,6 +131,8 @@ CardDeck *CardDeck::MakeDeck()
     for (i = MAX_CARDS - 1; i >= 0; i--)
     {
         int idx = (int)((double)i * rand() / (RAND_MAX + 1.0));
+        if (idx == i && i != 0)
+            continue;
         tmp = card_deck_arr[i];
         card_deck_arr[i] = card_deck_arr[idx];
         card_deck_arr[idx] = tmp;
