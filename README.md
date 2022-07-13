@@ -59,6 +59,7 @@ throw>
 > Note: in place where `throw>` was written it may be write also `def> , throw up> , beat> , take> , WON! , defeat`. It depends on your state in a game.
 
 If you want to throw a card, throw up a card or defence, type a button that matches your card (if you want to throw a `^2`, press `f`).
+If you want to set beat, or take cards, press `Enter`
 
 After throwing card you will see like that:
 ```
