@@ -29,7 +29,7 @@ void str_copy(char *dest, const char *from)
 ////////////////////
 
 #define CARDS_WITHOUT_SUIT_COUNT 13
-#define MAX_CARDS 52
+#define MAX_CARDS 11
 
 static char cards_without_suits[CARDS_WITHOUT_SUIT_COUNT][3] =
     {"2", "3", "4", "5", "6", "7",
@@ -396,7 +396,6 @@ Game::~Game()
     {
         player_item *tmp = first;
         first = first->next;
-        delete tmp->player;
         delete tmp;
     }
 

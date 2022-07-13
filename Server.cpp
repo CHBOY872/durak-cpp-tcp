@@ -426,8 +426,7 @@ Session::Session(int _fd, Server *_the_master)
 
 Session::~Session()
 {
-    if (player)
-        delete player;
+    delete player;
 }
 
 void Session::Send(const char *msg)
