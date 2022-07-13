@@ -78,6 +78,7 @@ Your cards:                                      < &9  > [ 40 ]
 throw up>
 ```
 - `^3  /` card which was thrown. If player who defence throw his card, his card will be shown on the right
+
 When the game ends the server shuts down.
 
 Enjoy a game!
